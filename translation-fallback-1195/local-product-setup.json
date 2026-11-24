@@ -1,0 +1,271 @@
+{
+  "pr": "https://github.com/fossasia/voxbento/pull/1374",
+  "head": "98d4447e30cb3f4eea0d5d9f5e579184360d8d61",
+  "setup": "README native application with migrations, MediaMTX 1.21.4 and Caddy local proxy",
+  "audio_input": "Prerecorded human speech from https://github.com/openai/whisper/blob/main/tests/jfk.flac, looped through browser microphone input",
+  "transcription": "Real faster-whisper tiny",
+  "primary": "Real local Ollama server on a dedicated port running qwen2.5:1.5b, deliberately stopped and restarted",
+  "fallback": "Real local NLLB-200 distilled 600M CT2 pinned revision 302d78f00e6fdb50a1064059df7c392b735e9d05",
+  "recording": "Direct capture of the running local application; no provider stubs or simulated interface. Server stop and restart happen outside the browser capture; trace records their effects.",
+  "stopped_at": 1795501446.218,
+  "observed_calls": [
+    {
+      "time": 1795501436.7073002,
+      "function": "circuit.start",
+      "failures": 0,
+      "open": false,
+      "generation": 0,
+      "probing": false,
+      "primary_permitted": true
+    },
+    {
+      "time": 1795501437.8309572,
+      "function": "circuit.start",
+      "failures": 0,
+      "open": false,
+      "generation": 0,
+      "probing": false,
+      "primary_permitted": true
+    },
+    {
+      "time": 1795501439.518757,
+      "function": "circuit.start",
+      "failures": 0,
+      "open": false,
+      "generation": 0,
+      "probing": false,
+      "primary_permitted": true
+    },
+    {
+      "time": 1795501440.541177,
+      "function": "circuit.complete",
+      "failures": 0,
+      "open": false,
+      "generation": 0,
+      "probing": false,
+      "succeeded": true
+    },
+    {
+      "time": 1795501441.606137,
+      "function": "circuit.complete",
+      "failures": 0,
+      "open": false,
+      "generation": 0,
+      "probing": false,
+      "succeeded": true
+    },
+    {
+      "time": 1795501441.8898509,
+      "function": "circuit.complete",
+      "failures": 0,
+      "open": false,
+      "generation": 0,
+      "probing": false,
+      "succeeded": true
+    },
+    {
+      "time": 1795501455.178097,
+      "function": "circuit.start",
+      "failures": 0,
+      "open": false,
+      "generation": 0,
+      "probing": false,
+      "primary_permitted": true
+    },
+    {
+      "time": 1795501455.186812,
+      "function": "circuit.complete",
+      "failures": 1,
+      "open": false,
+      "generation": 0,
+      "probing": false,
+      "succeeded": false
+    },
+    {
+      "time": 1795501455.1903732,
+      "function": "_run_inference",
+      "model": "nllb-200-distilled-600M"
+    },
+    {
+      "time": 1795501458.5341198,
+      "function": "circuit.start",
+      "failures": 1,
+      "open": false,
+      "generation": 0,
+      "probing": false,
+      "primary_permitted": true
+    },
+    {
+      "time": 1795501458.549653,
+      "function": "circuit.complete",
+      "failures": 2,
+      "open": false,
+      "generation": 0,
+      "probing": false,
+      "succeeded": false
+    },
+    {
+      "time": 1795501462.216635,
+      "function": "circuit.start",
+      "failures": 2,
+      "open": false,
+      "generation": 0,
+      "probing": false,
+      "primary_permitted": true
+    },
+    {
+      "time": 1795501462.225445,
+      "function": "circuit.complete",
+      "failures": 3,
+      "open": true,
+      "generation": 1,
+      "probing": false,
+      "succeeded": false
+    },
+    {
+      "time": 1795501463.52865,
+      "function": "circuit.start",
+      "failures": 3,
+      "open": true,
+      "generation": 1,
+      "probing": false,
+      "primary_permitted": false
+    },
+    {
+      "time": 1795501466.678561,
+      "function": "circuit.start",
+      "failures": 3,
+      "open": true,
+      "generation": 1,
+      "probing": false,
+      "primary_permitted": false
+    },
+    {
+      "time": 1795501470.093942,
+      "function": "circuit.start",
+      "failures": 3,
+      "open": true,
+      "generation": 1,
+      "probing": false,
+      "primary_permitted": false
+    },
+    {
+      "time": 1795501470.509417,
+      "function": "_run_inference",
+      "model": "nllb-200-distilled-600M"
+    },
+    {
+      "time": 1795501473.026807,
+      "function": "circuit.start",
+      "failures": 3,
+      "open": true,
+      "generation": 1,
+      "probing": false,
+      "primary_permitted": false
+    },
+    {
+      "time": 1795501473.817814,
+      "function": "_run_inference",
+      "model": "nllb-200-distilled-600M"
+    },
+    {
+      "time": 1795501475.708004,
+      "function": "circuit.start",
+      "failures": 3,
+      "open": true,
+      "generation": 1,
+      "probing": false,
+      "primary_permitted": false
+    },
+    {
+      "time": 1795501476.935581,
+      "function": "_run_inference",
+      "model": "nllb-200-distilled-600M"
+    },
+    {
+      "time": 1795501479.353601,
+      "function": "_run_inference",
+      "model": "nllb-200-distilled-600M"
+    },
+    {
+      "time": 1795501482.089001,
+      "function": "circuit.start",
+      "failures": 3,
+      "open": true,
+      "generation": 1,
+      "probing": false,
+      "primary_permitted": false
+    },
+    {
+      "time": 1795501482.567822,
+      "function": "_run_inference",
+      "model": "nllb-200-distilled-600M"
+    },
+    {
+      "time": 1795501487.682036,
+      "function": "circuit.start",
+      "failures": 3,
+      "open": true,
+      "generation": 1,
+      "probing": false,
+      "primary_permitted": false
+    },
+    {
+      "time": 1795501487.687432,
+      "function": "_run_inference",
+      "model": "nllb-200-distilled-600M"
+    },
+    {
+      "time": 1795501491.158866,
+      "function": "circuit.start",
+      "failures": 3,
+      "open": true,
+      "generation": 1,
+      "probing": false,
+      "primary_permitted": false
+    },
+    {
+      "time": 1795501491.278808,
+      "function": "_run_inference",
+      "model": "nllb-200-distilled-600M"
+    },
+    {
+      "time": 1795501493.5857222,
+      "function": "circuit.start",
+      "failures": 3,
+      "open": true,
+      "generation": 1,
+      "probing": true,
+      "primary_permitted": true
+    },
+    {
+      "time": 1795501496.829518,
+      "function": "circuit.complete",
+      "failures": 0,
+      "open": false,
+      "generation": 2,
+      "probing": false,
+      "succeeded": true
+    },
+    {
+      "time": 1795501499.2620952,
+      "function": "circuit.start",
+      "failures": 0,
+      "open": false,
+      "generation": 2,
+      "probing": false,
+      "primary_permitted": true
+    },
+    {
+      "time": 1795501499.959977,
+      "function": "circuit.complete",
+      "failures": 0,
+      "open": false,
+      "generation": 2,
+      "probing": false,
+      "succeeded": true
+    }
+  ],
+  "video_duration_seconds": 88.8,
+  "sha256": "c57891dbe7db29e0471555f1e9319369b3fe3a89f2bbd4d3f5e411203dab6ead"
+}
