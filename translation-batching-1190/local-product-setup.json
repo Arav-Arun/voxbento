@@ -1,0 +1,89 @@
+{
+  "pr": "https://github.com/fossasia/voxbento/pull/1373",
+  "head": "e69d33aa525238f8ab95a34dbccffbb252018acc",
+  "setup": "README native development, full application lifespan, Alembic head, MediaMTX 1.21.4, local Caddy reverse proxy",
+  "local_url": "http://localhost:8088",
+  "audio_input": "Prerecorded human speech from https://github.com/openai/whisper/blob/main/tests/jfk.flac, looped through browser microphone input",
+  "transcription": "Actual faster-whisper tiny, CPU int8",
+  "translation": "Actual NLLB-200 distilled 600M, pinned CT2 revision 302d78f00e6fdb50a1064059df7c392b735e9d05",
+  "active_targets": [
+    "fr",
+    "de",
+    "es"
+  ],
+  "native_batch_call_count": 11,
+  "all_batch_sizes": [
+    3
+  ],
+  "observed_calls": [
+    {
+      "time": 1795495440.016288,
+      "function": "_run_batch_inference",
+      "model": "nllb-200-distilled-600M",
+      "items": 3
+    },
+    {
+      "time": 1795495445.212082,
+      "function": "_run_batch_inference",
+      "model": "nllb-200-distilled-600M",
+      "items": 3
+    },
+    {
+      "time": 1795495451.177102,
+      "function": "_run_batch_inference",
+      "model": "nllb-200-distilled-600M",
+      "items": 3
+    },
+    {
+      "time": 1795495457.222495,
+      "function": "_run_batch_inference",
+      "model": "nllb-200-distilled-600M",
+      "items": 3
+    },
+    {
+      "time": 1795495460.193922,
+      "function": "_run_batch_inference",
+      "model": "nllb-200-distilled-600M",
+      "items": 3
+    },
+    {
+      "time": 1795495466.177257,
+      "function": "_run_batch_inference",
+      "model": "nllb-200-distilled-600M",
+      "items": 3
+    },
+    {
+      "time": 1795495469.1742988,
+      "function": "_run_batch_inference",
+      "model": "nllb-200-distilled-600M",
+      "items": 3
+    },
+    {
+      "time": 1795495472.166175,
+      "function": "_run_batch_inference",
+      "model": "nllb-200-distilled-600M",
+      "items": 3
+    },
+    {
+      "time": 1795495478.1858828,
+      "function": "_run_batch_inference",
+      "model": "nllb-200-distilled-600M",
+      "items": 3
+    },
+    {
+      "time": 1795495481.18188,
+      "function": "_run_batch_inference",
+      "model": "nllb-200-distilled-600M",
+      "items": 3
+    },
+    {
+      "time": 1795495490.183445,
+      "function": "_run_batch_inference",
+      "model": "nllb-200-distilled-600M",
+      "items": 3
+    }
+  ],
+  "video_duration_seconds": 68.88,
+  "sha256": "e43d99ec1e4d7b0dc4711a925c27a621b7cca0b55b27d1a422be252f4ce710be",
+  "recording": "Direct capture of running local application. No mocked provider output or replacement UI."
+}
